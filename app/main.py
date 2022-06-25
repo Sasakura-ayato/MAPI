@@ -18,6 +18,12 @@ def cv_dict(cursor, row):
 
 @app.get("/")
 async def root(q: Union[str, None] = None):
+    dbname = "../MAPI_metadata.db"
+    conn = sqlite3.connect(dbname)
+    conn.row_factory = cv_dict
+    cur = conn.cursor()
+    cur.execute("select count(*) from music_metadata;")
+    result = cur.fetchall()
     return {
         "message": "Hello World!",
         "version": version,
@@ -25,6 +31,7 @@ async def root(q: Union[str, None] = None):
         "message": "This endpoint is debug system.",
         "q": q,
         "sqlite3 Version": sqlite3.sqlite_version,
+        "amount of songs": result
     }
 
 
