@@ -1,2 +1,4 @@
 mutagen
 pysqlite3
+fastapi
+uvicorn
