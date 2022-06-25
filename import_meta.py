@@ -5,6 +5,8 @@ import os
 import sqlite3
 import glob
 
+print('=== Metadata to SQLite Database v0.1.0a ===')
+
 dbname = "MAPI_metadata.db"
 conn = sqlite3.connect(dbname)
 cur = conn.cursor()
