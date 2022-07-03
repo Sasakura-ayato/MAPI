@@ -2,3 +2,8 @@ mutagen
 pysqlite3
 fastapi
 uvicorn
+pypiwin32 
+flask 
+tweepy
+streamlit
+streamlit-webrtc
