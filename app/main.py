@@ -16,8 +16,8 @@ version = "1.0.0"
 # VLC インスタンスの起動
 p = vlc.MediaPlayer()
 pl = [
-    "C:\\Users\\michi\\source\\MAPI\\MusicAPI\\1-03 ambivalent world_.mp4",
-    "C:\\Users\\michi\\source\\MAPI\\MusicAPI\\1-03 - 鳥の詩.m4a",
+    "C:\\Users\\______\\source\\MAPI\\MusicAPI\\1-03 ambivalent world_.mp4",
+    "C:\\Users\\______\\source\\MAPI\\MusicAPI\\1-03 - 鳥の詩.m4a",
 ]
 index = 0
 
